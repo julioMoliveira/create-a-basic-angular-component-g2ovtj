@@ -1,0 +1,37 @@
+<div *ngFor="let product of products">
+  <h2 id="color-item">
+    <a [title]="product.name + ' details'">
+      <p style="background-color:Tomato;">{{ product.name }}</p>
+      {{ product.name }}
+    </a>
+  </h2>
+
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+  <button type="button" (click)="share()">Share</button>
+</div>
+<table  style=50%
+  border="1">
+  <h2>Full2-width Table</h2>
+  <br /><br />
+  <table id="customers" style=50%>
+    border="1">
+    <tr>
+      <th>5555555</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="c:\\Users\\Usuario\\work\\compras\\imagen.jpg" />
+      </td>
+      <td>Griffin</td>
+    </tr>
+  </table>
+</table>
